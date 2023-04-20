@@ -9,6 +9,26 @@
 ranks = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"]
 suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
 
+
+rank_count = 0
+suit_count = 0
+
+loop do
+    if rank_count == 13
+        break
+    end
+        loop do
+            if suit_count == 4
+                break
+            end
+                puts "#{ranks[rank_count]} of #{suits[suit_count]}"
+            suit_count = suit_count + 1
+        end 
+    suit_count = 0
+rank_count = rank_count + 1
+end
+
+
 # Sample output:
 # 2 of Clubs
 # 2 of Diamonds
@@ -20,3 +40,4 @@ suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
 # CHALLENGE
 # Deal a poker hand. Shuffle the deck and "deal" (i.e. display) a 5 card hand (i.e. 5 cards from the deck).
 # You will want to look at the documentation for Arrays: https://ruby-doc.org/core-2.7.0/Array.html
+
