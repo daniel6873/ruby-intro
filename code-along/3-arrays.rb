@@ -4,6 +4,14 @@
 
 # Arrays are lists of things
 
+foods = ["tacos","pizza","ice cream"]
+puts foods
+
+we_have_to_go_back = [4,8,15,16,32,42]
+
+p we_have_to_go_back
+puts we_have_to_go_back[7]
+
 # Accessing the array
 
 # Add to the array

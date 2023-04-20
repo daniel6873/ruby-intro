@@ -12,6 +12,14 @@
 # If the two lists contain the same item, only show it once!
 # Lastly, display each item in the list prepended with "buy ".
 
+friend_list1 = ["cheese","eggs","milk", "butter","ham"]
+friend_list2 = [ "ham","bacon","spam"]
+
+full_list = friend_list1 + friend_list2
+full_list2 = full_list.sort
+full_list3 = full_list2.uniq!
+p full_list3
+
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
